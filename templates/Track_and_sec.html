@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track and sec</title>
+</head>
+<body>
+<form action="/" target="_blank"><button>Main page</button>
+{% block content %}
+    <h2>{% block title %} Track and sec: {% endblock %}</h2>
+    <div  style="width: 20%; margin: left">
+         {% for requirement in requirements %}
+        <div  style="padding: 2.5px; background-color: #e8e9f6; margin: 5px">
+            <p  style="font-size: 20px">{{ requirement }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+</body>
+</html>
